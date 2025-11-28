@@ -1,11 +1,34 @@
-## Docker commands used to build the application 
-# TODO: insert the docker build command
+## Docker commands used to build the application
+
+docker build -t techtrends -f Dockerfile
 
 ## Docker commands used to run the application
-# TODO: insert the docker run command
+
+docker run -d -p 7111:3111 techtrends
 
 ## Docker commands used to get the application logs
-# TODO: insert the docker logs command
+
+#docker logs <container_id>
+docker logs a1ac458184ee
 
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
+
+PS C:\Prerna\udacity\nd064_course_1\project\techtrends> docker logs a1ac458184ee
+
+- Serving Flask app 'app' (lazy loading)
+- Environment: production
+  WARNING: This is a development server. Do not use it in a production deployment.
+  Use a production WSGI server instead.
+- Debug mode: off
+  2025-11-28 10:28:10,593 - WARNING - _ Running on all addresses.
+  WARNING: This is a development server. Do not use it in a production deployment.
+  2025-11-28 10:28:10,593 - INFO - _ Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+  2025-11-28 10:28:45,010 - INFO - Main page accessed
+  2025-11-28 10:28:45,016 - DEBUG - New database connection established. Total connections: 1
+  2025-11-28 10:28:45,025 - INFO - 192.168.127.1 - - [28/Nov/2025 10:28:45] "GET / HTTP/1.1" 200 -
+  2025-11-28 10:28:45,038 - INFO - 192.168.127.1 - - [28/Nov/2025 10:28:45] "GET /static/css/main.css HTTP/1.1" 200 -
+  2025-11-28 10:28:45,064 - INFO - 192.168.127.1 - - [28/Nov/2025 10:28:45] "GET /favicon.ico HTTP/1.1" 404 -
+  2025-11-28 10:32:21,517 - INFO - Main page accessed
+  2025-11-28 10:32:21,518 - DEBUG - New database connection established. Total connections: 2
+  2025-11-28 10:32:21,519 - INFO - 192.168.127.1 - - [28/Nov/2025 10:32:21] "GET / HTTP/1.1" 200 -
+  2025-11-28 10:32:21,532 - INFO - 192.168.127.1 - - [28/Nov/2025 10:32:21] "GET /static/css/main.css HTTP/1.1" 304 -
