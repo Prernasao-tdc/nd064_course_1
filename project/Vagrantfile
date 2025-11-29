@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "opensuse/Leap-15.2.x86_64"
   config.vm.box_version = "15.2.31.632"
 
-  # Provisioner to update and install required packages
+  # Minimize provisioners for testing
   config.vm.provision "shell", inline: <<-SHELL
     sudo zypper update -y
     sudo zypper install -y apparmor-parser

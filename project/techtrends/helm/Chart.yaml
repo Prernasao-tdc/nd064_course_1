@@ -1,0 +1,9 @@
+apiVersion: v2
+name: techtrends
+description: A Helm chart for the TechTrends application
+version: 1.0.0
+keywords:
+  - techtrends
+maintainers:
+  - name: Prerna Sao
+    email: pres@tdcnet.dk
